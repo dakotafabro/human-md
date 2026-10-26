@@ -80,7 +80,8 @@ pre {
   background: var(--code-bg);
   padding: 1rem;
   border-radius: 6px;
-  overflow-x: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
   line-height: 1.45;
 }
 
