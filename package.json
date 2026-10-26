@@ -4,10 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run check:templates",
     "build": "next build",
     "start": "npx serve out",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "templates": "node scripts/templates.mjs",
+    "check:templates": "node scripts/templates.mjs --check"
   },
   "dependencies": {
     "marked": "^18.1.1",

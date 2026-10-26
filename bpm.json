@@ -1,0 +1,36 @@
+{
+  "name": "human-md-starter",
+  "version": "0.1.0",
+  "type": "template",
+  "description": "Starter HUMAN.md files for adding a page for the person to an agent configuration you already have",
+  "entry": "templates/README.md",
+  "files": [
+    "templates",
+    "HUMAN.md"
+  ],
+  "scope": "project",
+  "token_cost": 260,
+  "keywords": [
+    "human-md",
+    "starter",
+    "template",
+    "documentation",
+    "agents-md",
+    "skills"
+  ],
+  "author": {
+    "name": "Dakota Fabro",
+    "github": "dakotafabro"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/dakotafabro/human-md",
+  "agents": [
+    "goose",
+    "claude-code",
+    "codex",
+    "cursor"
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "peers": []
+}
