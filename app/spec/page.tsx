@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { sampleSections, sampleSource } from "@/lib/sample";
 
 export const metadata: Metadata = {
   title: "Spec",
   description: "The HUMAN.md format, version 0.1 (draft): when you need one, where it lives, and its sections.",
 };
-
-const core = [
-  ["What changes for you", "What the agent does differently now. One or two sentences under the title."],
-  ["Reserved for human judgment", "The decisions that stay with the person, and why."],
-  ["What it reads, writes and sends", "Files, settings and anything that leaves the machine. Say \"not documented\" rather than guess."],
-  ["Turn it off", "For one session, and for good."],
-];
 
 const recommended = [
   ["How to read it", "What to look at first in what the agent produces."],
@@ -87,7 +81,21 @@ export default function Spec() {
       </p>
 
       <h3>Core: every HUMAN.md</h3>
-      <Sections rows={core} caption="Core sections" />
+      <p>
+        Each with a working sample, adapted from{" "}
+        <Link href={sampleSource.href}>{sampleSource.name}</Link>.
+      </p>
+      <ol className="core">
+        {sampleSections.map((sec) => (
+          <li key={sec.name}>
+            <h4>{sec.name}</h4>
+            <p>{sec.what}</p>
+            <pre>
+              <code>{sec.md}</code>
+            </pre>
+          </li>
+        ))}
+      </ol>
 
       <h3>Recommended: when it changes how the agent reasons with you</h3>
       <Sections rows={recommended} caption="Recommended sections" />

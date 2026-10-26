@@ -309,3 +309,21 @@ thead th {
 tbody th {
   width: 38%;
 }
+
+.core {
+  list-style: none;
+  padding: 0;
+}
+
+.core h4 {
+  font-size: 1rem;
+  margin: 1.5rem 0 0.2rem;
+}
+
+.core p {
+  margin: 0 0 0.5rem;
+}
+
+.copyblock pre {
+  padding-top: 2.4rem;
+}

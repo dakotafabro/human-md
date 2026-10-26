@@ -1,4 +1,6 @@
 import Link from "next/link";
+import CopyBlock from "@/components/CopyBlock";
+import { sampleFull, sampleSource } from "@/lib/sample";
 
 export default function Home() {
   return (
@@ -39,20 +41,11 @@ export default function Home() {
 
       <section>
         <h2>What&apos;s in it</h2>
-        <ul>
-          <li>
-            <strong>What changes for you</strong>
-          </li>
-          <li>
-            <strong>Reserved for human judgment</strong>
-          </li>
-          <li>
-            <strong>What it reads, writes and sends</strong>
-          </li>
-          <li>
-            <strong>Turn it off</strong>
-          </li>
-        </ul>
+        <p>
+          Every HUMAN.md has four sections. A working sample, adapted from{" "}
+          <Link href={sampleSource.href}>{sampleSource.name}</Link>:
+        </p>
+        <CopyBlock text={sampleFull} label="sample HUMAN.md" />
         <p>
           Packages that change how the agent reasons with you add more, including a{" "}
           <strong>How I think</strong> section you edit and the agent reads.{" "}
