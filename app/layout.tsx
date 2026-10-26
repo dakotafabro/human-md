@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="site-footer">
           <p>
             HUMAN.md is an open format, version 0.1 (draft). Started by{" "}
-            <a href="https://dakotafabro.dev">Dakota Fabro</a>. Source and discussion on{" "}
+            <a href="https://dakotafabro.dev">Dakota Fabro</a>, Agentic AI Foundation Ambassador. Source and discussion on{" "}
             <a href="https://github.com/dakotafabro/human-md">GitHub</a>. Apache 2.0.
           </p>
         </footer>

@@ -12,9 +12,7 @@ export default function Examples() {
     <article className="prose">
       <h1>Examples</h1>
       <p>
-        The first use case is <a href="https://usebpm.dev">bpm</a>, a package manager for agent
-        skills and tools. Each of Dakota&apos;s bpm packages has a HUMAN.md in its repo. These
-        three show the range, copied as they are from each repo at the commit shown.
+        From <a href="https://usebpm.dev">bpm</a> packages, copied as they are at the commit shown.
       </p>
       <ul className="cards">
         {examples.map((e) => (

@@ -18,7 +18,7 @@ export const examples: Example[] = [
     repo: "dakotafabro/possibility-matrix",
     commit: "1364f6d",
     shape: "Changes how the agent reasons with you",
-    why: "The full shape: how to read the output, when to override it, what the agent learns about you, and a How I think section the person edits.",
+    why: "Every recommended section, including How I think.",
   },
   {
     slug: "learning-mode",
@@ -26,7 +26,7 @@ export const examples: Example[] = [
     repo: "dakotafabro/learning-mode",
     commit: "5471009",
     shape: "Changes what the agent is trying to do",
-    why: "The core sections plus cost and a quick check. It names the one phrase that turns it off for a session.",
+    why: "Core sections, cost and a quick check.",
   },
   {
     slug: "spore",
@@ -34,7 +34,7 @@ export const examples: Example[] = [
     repo: "dakotafabro/spore",
     commit: "ff7ee30",
     shape: "Adds memory the agent carries between sessions",
-    why: "Spends most of its words on what it reads, writes and keeps, because that is what the person needs to trust it.",
+    why: "Most of it covers what it reads, writes and keeps.",
   },
 ];
 

@@ -13,8 +13,8 @@ export default function Template() {
     <article className="prose">
       <h1>Template</h1>
       <p>
-        Copy one into <code>HUMAN.md</code> at your package root, fill in the angle brackets, and
-        link it from your README. <Link href="/spec#when">Which one do I need?</Link>
+        Copy one into <code>HUMAN.md</code> at your package root and link it from your README.{" "}
+        <Link href="/spec#when">Which one?</Link>
       </p>
 
       <h2>Core</h2>
@@ -22,10 +22,7 @@ export default function Template() {
       <CopyBlock text={coreTemplate} label="core template" />
 
       <h2>Full</h2>
-      <p>
-        For a package that changes defaults or how the agent reasons with you. It adds how to read
-        it, when to override it, what the agent learns about you, and a How I think section.
-      </p>
+      <p>For a package that changes defaults or how the agent reasons with you.</p>
       <CopyBlock text={fullTemplate} label="full template" />
     </article>
   );
