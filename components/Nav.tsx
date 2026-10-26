@@ -5,6 +5,7 @@ const links = [
   { href: "/spec", label: "Spec" },
   { href: "/template", label: "Template" },
   { href: "/examples", label: "Examples" },
+  { href: "/goose", label: "goose" },
 ];
 
 export default function Nav() {

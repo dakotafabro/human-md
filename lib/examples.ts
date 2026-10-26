@@ -9,6 +9,7 @@ export type Example = {
   commit: string;
   shape: string;
   why: string;
+  note?: string;
 };
 
 export const examples: Example[] = [
@@ -19,6 +20,7 @@ export const examples: Example[] = [
     commit: "1364f6d",
     shape: "Changes how the agent reasons with you",
     why: "Every recommended section, including How I think.",
+    note: "This file was first shared with the possibility-matrix package in aaif/ambassadors#1142.",
   },
   {
     slug: "learning-mode",

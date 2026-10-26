@@ -22,6 +22,7 @@ export default function Examples() {
             </h2>
             <p className="meta">{e.shape}</p>
             <p>{e.why}</p>
+            {e.note && <p className="meta">{e.note}</p>}
           </li>
         ))}
       </ul>

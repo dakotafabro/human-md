@@ -32,6 +32,7 @@ export default async function ExamplePage({ params }: { params: Promise<{ slug: 
         </a>
         . On bpm: <a href={`https://usebpm.dev/packages/${e.slug}`}>usebpm.dev/packages/{e.slug}</a>.
       </p>
+      {e.note && <p className="meta">{e.note}</p>}
       <div className="example" dangerouslySetInnerHTML={{ __html: exampleHtml(e.slug) }} />
     </article>
   );
