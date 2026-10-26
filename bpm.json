@@ -5,7 +5,9 @@
   "description": "Starter HUMAN.md files for adding a page for the person to an agent configuration you already have",
   "entry": "templates/README.md",
   "files": [
-    "templates",
+    "templates/README.md",
+    "templates/HUMAN.core.md",
+    "templates/HUMAN.full.md",
     "HUMAN.md"
   ],
   "scope": "project",
